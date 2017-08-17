@@ -89,7 +89,9 @@
 		</filter>
 	</appender>
 
-        <appender name="WS"
+        <!-- 第三方接口等需要另外记录 -->
+       <!--  
+       <appender name="WS"
                 class="ch.qos.logback.core.rolling.RollingFileAppender">
                 <file>${LOG_PATH}/${APPDIR}/log_ws.log</file>
                 <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
@@ -111,7 +113,7 @@
                         <onMatch>ACCEPT</onMatch>
                         <onMismatch>DENY</onMismatch>
                 </filter>
-        </appender>
+        </appender> 
         
 	<appender name="serviceAppender"
 		class="ch.qos.logback.core.rolling.RollingFileAppender">
@@ -126,6 +128,7 @@
 			<charset>utf-8</charset>
 		</encoder>
 	</appender>
+	-->
 
 	<!-- 控制台输出 -->
 	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
@@ -156,9 +159,9 @@
 	<!-- <logger name="com.dis.collect.webservice" level="INFO" additivity="false"> 
 		<appender-ref ref="serviceAppender" /> </logger> -->
 
-	<logger name="webservice" level = "INFO" additivity="false">
+	<!-- <logger name="webservice" level = "INFO" additivity="false">
 		<appender-ref ref="WS" />
-	</logger>
+	</logger> -->
 
 	<!-- logger: 用来设置某一个包或者具体的某一个类的日志打印级别 -->
 	<logger name="org.springframework" level="WARN" />
