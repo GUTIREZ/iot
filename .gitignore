@@ -1,8 +1,7 @@
-# Compiled class file
-*.class
+# Compiled class file.class
 
 # Log file
-*.log
+.log
 
 # BlueJ files
 *.ctxt
@@ -11,12 +10,15 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
+.jar
+.war
+.ear
+.zip
+.tar.gz
+.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+src/test/
+target/
